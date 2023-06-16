@@ -1,3 +1,2 @@
-import Homeicon from './home.svg';
-
-export {Homeicon}
+import Img from './test.jpg'
+export {Img}
