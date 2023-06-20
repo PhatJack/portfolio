@@ -44,7 +44,7 @@ function SideBar() {
           <div className="component-text text-center text-white text-xl flex flex-col gap-2 mt-5">
             <p className="email">tienphatng.693@gmail.com</p>
             <p className="address">Based in Quang Ngai, Viet Nam</p>
-            <p className="copyright text-sm mt-4">
+            <p className="copyright text-sm mt-4 text-gray-600">
               © 2023 Jack. All Rights Reserved
             </p>
           </div>
