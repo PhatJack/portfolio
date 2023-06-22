@@ -8,7 +8,7 @@ function App() {
 	return (
 		<>
 			<ParticleBackground />
-			<div className="flex justify-between items-center p-20">
+			<div className="flex justify-between p-20">
 				<SideBar></SideBar>
 				<HomePage></HomePage>
 				<Navbar></Navbar>
@@ -16,5 +16,4 @@ function App() {
 		</>
 	);
 }
-
 export default App;

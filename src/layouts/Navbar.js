@@ -6,46 +6,46 @@ import { HiOutlineBriefcase } from "react-icons/hi";
 import { BsColumnsGap } from "react-icons/bs";
 function Navbar() {
 	return (
-		<div className="w-16 h-80 border-white border-2 rounded-full relative">
+		<div className="w-14 h-full border-gray-600 border-2 rounded-full relative transform translate-y-3/4">
 			<div className="w-full h-full">
-				<ul className="flex flex-col justify-between items-center h-full w-full px-7 py-5">
+				<ul className="flex flex-col justify-between items-center h-full w-full py-5 gap-10">
 					<li>
 						<Link to="/home">
 							<FiHome
-								size={24}
-								className="text-white hover:text-primary transition-all"
+								size={23}
+								className="text-gray-600 hover:text-primary transition-all"
 							/>
 						</Link>
 					</li>
 					<li>
 						<Link to="/personal">
 							<BiUser
-								size={24}
-								className="text-white hover:text-primary transition-all"
+								size={23}
+								className="text-gray-600 hover:text-primary transition-all"
 							/>
 						</Link>
 					</li>
 					<li>
 						<Link to="/education">
 							<HiOutlineBriefcase
-								size={24}
-								className="text-white hover:text-primary transition-all"
+								size={23}
+								className="text-gray-600 hover:text-primary transition-all"
 							/>
 						</Link>
 					</li>
 					<li>
 						<Link to="/project">
 							<BsColumnsGap
-								size={24}
-								className="text-white hover:text-primary transition-all"
+								size={23}
+								className="text-gray-600 hover:text-primary transition-all"
 							/>
 						</Link>
 					</li>
 					<li>
 						<Link to="/contact">
 							<BiEnvelope
-								size={24}
-								className="text-white hover:text-primary transition-all"
+								size={23}
+								className="text-gray-600 hover:text-primary transition-all"
 							/>
 						</Link>
 					</li>

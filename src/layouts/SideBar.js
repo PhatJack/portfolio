@@ -88,7 +88,7 @@ function SideBar() {
 						</ul>
 					</div>
 					<CustomButton
-						className="bg-primary p-3 flex justify-center items-center gap-2 hover:bg-transparent hover:text-primary border-2 border-primary transition-all text-center rounded-2xl text-xl"
+						className="bg-primary py-3 flex justify-center items-center gap-2 hover:bg-transparent hover:text-primary border-2 border-primary transition-all text-center rounded-full text-xl"
 					>
 						<BsEnvelope className="pt-1 w-6 h-6" />
 						GET IN TOUCH
