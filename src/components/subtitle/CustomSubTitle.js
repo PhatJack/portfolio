@@ -7,8 +7,9 @@ function CustomSubTitle({ children }) {
 		</div>
 	)
 }
-CustomSubTitle.Head = (props) => <p className='text-sm cursor-pointer border border-gray-700 px-4 py-2 inline-flex justify-start items-center gap-2 uppercase rounded-full tracking-wide'>
+CustomSubTitle.Head = (props) => <p className='text-sm font-light cursor-pointer border border-gray-700 px-4 py-2 inline-flex justify-start items-center gap-2 uppercase rounded-full tracking-wide'>
 	{props.children}
 </p>
-CustomSubTitle.Body = (props) => <h1 className='body-text text-[70px] mt-14 pr-52'>{props.children}</h1>
+CustomSubTitle.Body = (props) => <h1 className='body-text text-7xl mt-14 leading-tight font-light'>{props.children}</h1>
+CustomSubTitle.Description = (props) => <p className='body-description font-light mt-8 tracking-wide text-gray-400'>{props.children}</p>
 export default CustomSubTitle;

@@ -6,7 +6,7 @@ import { HiOutlineBriefcase } from "react-icons/hi";
 import { BsColumnsGap } from "react-icons/bs";
 function Navbar() {
 	return (
-		<div className="w-14 h-full border-gray-600 border-2 rounded-full relative transform translate-y-3/4">
+		<div className="w-14 h-fit border-gray-600 border-2 rounded-full fixed right-20 top-1/2 -translate-y-1/2">
 			<div className="w-full h-full">
 				<ul className="flex flex-col justify-between items-center h-full w-full py-5 gap-10">
 					<li>

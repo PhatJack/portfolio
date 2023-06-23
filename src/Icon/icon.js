@@ -1,2 +1,3 @@
 import Img from './test.jpg'
-export {Img}
+import RoundedText from './round-text.png'
+export { Img, RoundedText }
