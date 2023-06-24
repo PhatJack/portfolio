@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CustomButton({ children, ...attributes }) {
 	return (
-		<Link {...attributes} to="/contact">
+		<Link {...attributes} to={'#contact'}>
 			{children}
 		</Link>
 	);

@@ -15,13 +15,9 @@ const App = () => {
 			<SideBar></SideBar>
 			<HomePage />
 			<AboutPage />
-			{/* <Routes>
-				<Route exact path="/" element={<HomePage />} />
-				<Route exact path="/about" element={<AboutPage />} />
-				<Route exact path="/education" element={<EducationPage />} />
-				<Route exact path="/project" element={<ProjectPage />} />
-				<Route exact path="/contact" element={<ContactPage />} />
-			</Routes> */}
+			<EducationPage />
+			<ProjectPage />
+			<ContactPage />
 			<Navbar></Navbar>
 		</div>
 	);

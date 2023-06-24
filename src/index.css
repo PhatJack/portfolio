@@ -2,9 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
 	font-family: 'Inter', sans-serif;
 }
-html{
-	scroll-behavior: smooth;
+
+@layer components {
+	.timeline {
+		@apply ml-3 mt-3 py-16 space-y-14 mb-8
+	}
+
+	.line {
+		@apply 
+			absolute top-3
+			w-[1px] h-72
+			bg-gray-600
+	}
+
+	.dot {
+		@apply absolute top-1 -left-3 bg-gray-600 h-6 w-6 rounded-full border-4 border-black
+	}
+
+	.timeline-date {
+		@apply text-sm font-light text-gray-500 tracking-widest
+	}
+
+	.timeline-title {
+		@apply text-3xl font-light tracking-wide text-white mt-5 mb-1
+	}
 }
