@@ -1,3 +1,4 @@
 import Img from './test.jpg'
 import RoundedText from './round-text.png'
-export { Img, RoundedText }
+import Demo from './demo.jpg'
+export { Img, RoundedText, Demo }

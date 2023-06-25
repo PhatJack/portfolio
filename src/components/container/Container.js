@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Container({children}) {
+function Container({ children}) {
 	return (
 		<div className="py-16">
 			<div className='text-white relative ml-auto max-w-[1200px] w-full'>

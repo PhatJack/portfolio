@@ -6,7 +6,7 @@ function ContactPage() {
 	return (
 		<Container>
 			<div className="" id="contact">
-				<div className="my-14">
+				<div className='w-full h-full'>
 					<CustomSubTitle>
 						<CustomSubTitle.Head>
 							<BsEnvelope />
@@ -22,23 +22,23 @@ function ContactPage() {
 							<section>
 								<label htmlFor="" className='uppercase'>Full Name</label>
 								<br />
-								<input type="text" name="name" id="" className='py-3 bg-transparent border-b-[1px] border-gray-600 focus:outline-none w-full' placeholder={"Your full name"} />
+								<input type="text" name="name" id="" className='input-general w-full' placeholder={"Your full name"} />
 							</section>
 							<section>
 								<label htmlFor="" className='uppercase'>Email</label>
 								<br />
-								<input type="email" name="email" id="" className='py-3 bg-transparent border-b-[1px] border-gray-600 focus:outline-none w-full' placeholder={"Your email"} />
+								<input type="email" name="email" id="" className='input-general w-full' placeholder={"Your email"} />
 							</section>
 						</div>
 						<section>
 							<label htmlFor="" className='uppercase'>Phone</label>
 							<br />
-							<input type="tel" name="phone" id="" className='py-3 bg-transparent border-b-[1px] border-gray-600 focus:outline-none w-[29%]' placeholder={"Your phone number"} />
+							<input type="tel" name="phone" id="" className='input-general w-[29%]' placeholder={"Your phone number"} />
 						</section>
 						<section>
 							<label htmlFor="" className='uppercase'>Subject</label>
 							<br />
-							<input type="text" name="subject" id="" className='py-3 bg-transparent border-b-[1px] border-gray-600 focus:outline-none w-[63%]' placeholder={"Your topic you wanna talk about"} />
+							<input type="text" name="subject" id="" className='input-general w-[63%]' placeholder={"Your topic you wanna talk about"} />
 						</section>
 						<section>
 							<label htmlFor="" className='uppercase'>Message</label>
