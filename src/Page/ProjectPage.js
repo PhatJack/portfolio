@@ -15,6 +15,7 @@ function ProjectPage() {
 						Featured & <span className='text-primary'>Project</span>
 					</CustomSubTitle.Body>
 				</CustomSubTitle>
+				
 			</div>
 		</Container>
 	)

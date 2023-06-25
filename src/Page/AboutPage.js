@@ -4,7 +4,7 @@ import CustomSubTitle from '../components/subtitle/CustomSubTitle'
 import { BiUser } from "react-icons/bi";
 function AboutPage() {
 	return (
-		<div className="pb-[290px]" id="about">
+		<div className="pb-[275px]" id="about">
 			<Container>
 				<CustomSubTitle>
 					<CustomSubTitle.Head>

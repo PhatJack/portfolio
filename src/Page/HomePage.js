@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom';
 import { RoundedText } from '../Icon/icon';
 import Container from '../components/container/Container';
 function HomePage() {
+	const handleClick = (id) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
+		}
+	};
 	return (
 		<Container>
 			<div className="flex" id="home">
@@ -25,7 +31,9 @@ function HomePage() {
 					</CustomSubTitle.Description>
 				</CustomSubTitle>
 			</div>
-			<Link to="/project" className='w-[175px] h-[175px] relative border border-gray-500 flex justify-center items-center ml-auto rounded-full mt-10'>
+			<Link to="#project" 
+				onClick={() => handleClick('project')}
+				className='w-[175px] h-[175px] relative border border-gray-500 flex justify-center items-center ml-auto rounded-full mt-10'>
 				<img src={RoundedText} alt="" className='animate-[spin_7s_linear_infinite] duration-1000' />
 				<BsArrowDown size={35} className='absolute' />
 			</Link>
