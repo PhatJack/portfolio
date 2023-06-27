@@ -4,7 +4,6 @@ import React from 'react'
 import Container from '../components/container/Container'
 import CustomSubTitle from '../components/subtitle/CustomSubTitle'
 import { HiOutlineBriefcase } from 'react-icons/hi'
-import { Timeline } from 'flowbite-react'
 function EducationPage() {
 	return (
 		<Container>
