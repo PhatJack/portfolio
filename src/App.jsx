@@ -3,7 +3,7 @@ import Navbar from "./layouts/Navbar";
 import ParticleBackground from "./bgParticle/ParticleBackground";
 import SideBar from "./layouts/SideBar";
 import HomePage from "./Page/HomePage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import AboutPage from "./Page/AboutPage";
 import EducationPage from "./Page/EducationPage";
 import ContactPage from "./Page/ContactPage";
@@ -12,7 +12,7 @@ import React from "react";
 const App = () => {
   return (
     <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             path="/"
@@ -30,7 +30,7 @@ const App = () => {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </React.StrictMode>
   );
 };
