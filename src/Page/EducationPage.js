@@ -7,7 +7,7 @@ import { HiOutlineBriefcase } from 'react-icons/hi'
 function EducationPage() {
 	return (
 		<Container>
-			<div className="" id="education">
+			<div className="my-[90px]" id="education">
 				<CustomSubTitle>
 					<CustomSubTitle.Head>
 						<HiOutlineBriefcase />

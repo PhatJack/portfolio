@@ -9,9 +9,9 @@ import CustomButton from "../components/button/CustomButton";
 function SideBar() {
 	return (
 		<div className="box-border w-full h-full">
-			<div className="fixed top-1/2 left-10 -translate-y-1/2">
-				<div className="w-[25em] h-[45em] border-2 border-gray-800 rounded-[30px]">
-					<div className="wrapper px-12 py-10 flex flex-col items-stretch gap-7">
+			<div className="2xl:fixed 2xl:top-1/2 2xl:left-10 2xl:-translate-y-1/2 relative top-0 left-0 2xl:w-fit w-full m-auto max-w-[800px] 2xl:mt-0 mt-10">
+				<div className="w-full border-2 border-gray-800 rounded-[30px]">
+					<div className="wrapper px-12 py-16 flex flex-col items-stretch gap-7">
 						<section className="top-content flex justify-between items-center">
 							<div className="name-text relative">
 								<h1 className="text-4xl text-white tracking-wide font-semibold">Jack</h1>
@@ -37,7 +37,7 @@ function SideBar() {
 								</p>
 							</div>
 						</section>
-						<div className="main-img h-56">
+						<div className="main-img h-56 2xl:m-0 m-auto">
 							<img
 								src={Img}
 								alt=""
@@ -52,8 +52,8 @@ function SideBar() {
 								© 2023 Jack. All Rights Reserved
 							</p>
 						</div>
-						<div className="social-media-contact px-10">
-							<ul className="flex justify-between items-center">
+						<div className="social-media-contact px-9">
+							<ul className="flex 2xl:justify-between items-center justify-center gap-3	">
 								<li>
 									<Link to="https://www.facebook.com/jack.willam2003" target="_blank">
 										<FaFacebook
@@ -91,7 +91,7 @@ function SideBar() {
 						<CustomButton
 							className="bg-primary py-3 flex justify-center items-center gap-2 hover:bg-transparent hover:text-primary border-2 border-primary transition-all text-center rounded-full text-xl"
 						>
-							<BsEnvelope className="pt-1 w-6 h-6" />
+							<BsEnvelope className="w-6 h-6" />
 							GET IN TOUCH
 						</CustomButton>
 					</div>

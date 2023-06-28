@@ -39,6 +39,6 @@
 	}
 
 	.underline-text {
-		@apply before:content-[''] before:absolute before:bg-white before:w-0 before:h-[1px] before:bottom-0 before:group-hover/project:w-full before:transition-all
+		@apply before:content-[''] before:absolute before:bg-white before:w-0 before:h-[1px] before:bottom-0 before:group-hover/project:w-full before:transition-all before:duration-500
 	}
 }

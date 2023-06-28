@@ -15,7 +15,7 @@ function Project(props) {
 						</li>
 					</ul>
 				</div>
-				<h2 className='underline-text relative text-4xl cursor-pointer pb-2 tracking-wider w-fit'>{props.name}</h2>
+				<h2 className='underline-text relative text-3xl cursor-pointer pb-2 tracking-wider w-fit'>{props.name}</h2>
 			</div>
 		</div>
 	)
