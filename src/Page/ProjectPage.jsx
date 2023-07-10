@@ -6,18 +6,22 @@ import Project from '../components/project/Project'
 import { Demo } from '../Icon/icon'
 function ProjectPage() {
 	return (
-		<Container>
-			<div id="project">
+		<div id="project">
+			<Container>
 				<CustomSubTitle>
-					<CustomSubTitle.Head>
-						<BsColumnsGap />
-						Projects
-					</CustomSubTitle.Head>
-					<CustomSubTitle.Body>
-						Featured & <span className='text-primary'>Project</span>
-					</CustomSubTitle.Body>
+					<div data-aos="fade-right" data-aos-duration="1500">
+						<CustomSubTitle.Head>
+							<BsColumnsGap />
+							Projects
+						</CustomSubTitle.Head>
+					</div>
+					<div data-aos="fade-up" data-aos-duration="1000">
+						<CustomSubTitle.Body>
+							Featured & <span className='text-primary'>Project</span>
+						</CustomSubTitle.Body>
+					</div>
 				</CustomSubTitle>
-				<div className="grid grid-cols-[auto_auto] grid-rows-[auto_auto_auto] gap-10">
+				<div className="grid grid-cols-[auto_auto] grid-rows-[auto_auto_auto] gap-10" data-aos="fade-up" data-aos-duration="1500">
 					<Project src={Demo} name="Future world by AI" className="col-start-1 col-end-3">
 					</Project>
 					<Project src={Demo} name="Future world by AI">
@@ -27,8 +31,8 @@ function ProjectPage() {
 					<Project src={Demo} name="Future world by AI" className="col-start-1 col-end-3">
 					</Project>
 				</div>
-			</div>
-		</Container>
+			</Container>
+		</div>
 	)
 }
 

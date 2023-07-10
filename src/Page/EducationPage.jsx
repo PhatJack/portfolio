@@ -9,16 +9,20 @@ function EducationPage() {
 		<Container>
 			<div className="my-[90px]" id="education">
 				<CustomSubTitle>
-					<CustomSubTitle.Head>
-						<HiOutlineBriefcase />
-						Education
-					</CustomSubTitle.Head>
-					<CustomSubTitle.Body>
-						Education & <span className='text-primary'> Experience </span>
-					</CustomSubTitle.Body>
+					<div data-aos="fade-right" data-aos-duration="1500">
+						<CustomSubTitle.Head>
+							<HiOutlineBriefcase />
+							Education
+						</CustomSubTitle.Head>
+					</div>
+					<div data-aos="fade-up">
+						<CustomSubTitle.Body>
+							Education & <span className='text-primary'> Experience </span>
+						</CustomSubTitle.Body>
+					</div>
 				</CustomSubTitle>
 				<div className="timeline">
-					<div className="relative group/hover-dot">
+					<div className="relative group/hover-dot" data-aos="fade-up" data-aos-duration="500">
 						<div className="line"></div>
 						<div className="dot group-hover/hover-dot:bg-primary transition-all"></div>
 						<div className="pl-10">
@@ -29,7 +33,7 @@ function EducationPage() {
 							</p>
 						</div>
 					</div>
-					<div className="relative group/hover-dot">
+					<div className="relative group/hover-dot" data-aos="fade-up" data-aos-duration="700">
 						<div className="line"></div>
 						<div className="dot group-hover/hover-dot:bg-primary transition-all"></div>
 						<div className="pl-10">
@@ -40,7 +44,7 @@ function EducationPage() {
 							</p>
 						</div>
 					</div>
-					<div className="relative group/hover-dot">
+					<div className="relative group/hover-dot" data-aos="fade-up" data-aos-duration="900">
 						<div className="line"></div>
 						<div className="dot group-hover/hover-dot:bg-primary transition-all"></div>
 						<div className="pl-10">
