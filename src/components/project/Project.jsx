@@ -3,7 +3,7 @@ import React from 'react'
 function Project(props) {
 	return (
 		<div className={props.className}>
-			<div className="my-8 group/project flex-[0_0_auto]">
+			<div className="mt-8 group/project flex-[0_0_auto]">
 				<div className="relative overflow-hidden rounded-[30px] mb-8 h-[400px]">
 					<img src={props.src} alt="" className='w-full h-full object-cover' />
 					<ul className='absolute bottom-5 left-5 flex gap-4'>

@@ -1,5 +1,6 @@
 import React from 'react'
-
+// import Aos from 'aos'
+// import 'aos/dist/aos.css'
 function CustomSubTitle({ children }) {
 	return (
 		<div className="section-header">

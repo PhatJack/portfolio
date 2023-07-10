@@ -5,7 +5,7 @@ import { BiUser } from "react-icons/bi";
 function AboutPage() {
 	return (
 		<div id="about">
-			<Container>
+			<Container id="about">
 				<CustomSubTitle>
 					<CustomSubTitle.Head>
 						<BiUser />

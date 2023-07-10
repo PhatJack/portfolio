@@ -20,7 +20,7 @@ const App = () => {
               <div className="relative">
                 <ParticleBackground />
                 <SideBar></SideBar>
-                <HomePage />
+                <HomePage/>
                 <AboutPage />
                 <EducationPage />
                 <ProjectPage />

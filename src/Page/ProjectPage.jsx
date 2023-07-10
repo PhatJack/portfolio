@@ -6,7 +6,6 @@ import Project from '../components/project/Project'
 import { Demo } from '../Icon/icon'
 function ProjectPage() {
 	return (
-
 		<Container>
 			<div id="project">
 				<CustomSubTitle>
@@ -18,7 +17,7 @@ function ProjectPage() {
 						Featured & <span className='text-primary'>Project</span>
 					</CustomSubTitle.Body>
 				</CustomSubTitle>
-				<div className="grid grid-cols-[auto_auto] grid-rows-[470px_470px_470px] gap-10">
+				<div className="grid grid-cols-[auto_auto] grid-rows-[auto_auto_auto] gap-10">
 					<Project src={Demo} name="Future world by AI" className="col-start-1 col-end-3">
 					</Project>
 					<Project src={Demo} name="Future world by AI">
