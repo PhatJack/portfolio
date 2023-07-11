@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react'
 import Container from '../components/container/Container'
 import CustomSubTitle from '../components/subtitle/CustomSubTitle'
