@@ -66,7 +66,18 @@ export default {
 				}
 			},
 			gridTemplateRows: {
-				'10': 'repeat(10, minmax(0, 120px))'
+				'10': 'repeat(10, minmax(0, 120px))',
+				'16': 'repeat(16, minmax(0, 120px))',
+				'17': 'repeat(17, minmax(0, 120px))',
+				'20': 'repeat(20, minmax(0, 120px))'
+			},
+			gridRowStart: {
+				'15' : '15',
+				'16' : '16',
+				'17' : '17',
+				'18' : '18',
+				'19' : '19',
+				'20' : '20'
 			}
 		}
 	},

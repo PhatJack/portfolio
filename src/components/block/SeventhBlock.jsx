@@ -4,7 +4,7 @@ import React from 'react'
 const SeventhBlock = () => {
 	return (
 		<div className="size-full flex flex-col justify-center items-center bg-transparent relative">
-			<p className='lg:text-6xl font-semibold text-[#ccc] select-none'>
+			<p className='text-6xl font-semibold text-[#ccc] select-none'>
 				0.5<span className='text-blue-500'>+</span>
 			</p>
 			<span className='w-full h-14 absolute lg:top-5 2xl:top-8 opacity-100 [background:linear-gradient(180deg,rgb(15,15,15,0%)_0%,#161616_92.6%)]' />

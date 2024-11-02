@@ -59,7 +59,7 @@ const SecondBlock = () => {
 					))}
 				</motion.div>
 			</div>
-			<button className='hover:bg-blue-400 transition-all bg-blue-500 px-8 py-2 rounded-2xl font-medium border-4 border-stone-800 size-fit absolute lg:-bottom-2 2xl:-bottom-1'>
+			<button className='hover:bg-blue-400 transition-all bg-blue-500 px-8 py-2 rounded-2xl font-medium border-4 border-stone-800 size-fit absolute md:-bottom-0 lg:-bottom-2 2xl:-bottom-1'>
 				View Works
 			</button>
 		</div>
