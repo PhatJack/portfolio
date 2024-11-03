@@ -75,15 +75,15 @@ const FourthBlock = () => {
 		document.body.removeChild(link)
 	}, [])
 
-	// useEffect(() => {
-	// 	const timer = setInterval(() => {
-	// 		setCurrentIndex((prevIndex) =>
-	// 			prevIndex === avatars.length - 1 ? 0 : prevIndex + 1
-	// 		);
-	// 	}, 4000);
+	useEffect(() => {
+		const timer = setInterval(() => {
+			setCurrentIndex((prevIndex) =>
+				prevIndex === avatars.length - 1 ? 0 : prevIndex + 1
+			);
+		}, 4000);
 
-	// 	return () => clearInterval(timer);
-	// }, []);
+		return () => clearInterval(timer);
+	}, []);
 
 	return (
 		<div className="size-full flex flex-col space-y-4">
@@ -97,7 +97,7 @@ const FourthBlock = () => {
 						duration: 0.35,
 						ease: "easeInOut"
 					}}
-					className="w-full h-full rounded-2xl border bg-custom-gradient animate-border border-transparent overflow-hidden"
+					className="w-full h-full aspect-[3/4] rounded-2xl border bg-custom-gradient animate-border border-transparent overflow-hidden"
 				>
 					<img
 						src={avatars[currentIndex]}
