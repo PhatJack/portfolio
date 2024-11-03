@@ -22,7 +22,7 @@ const NinethBlock = () => {
 	];
 
 	return (
-		<div className="size-full flex flex-col space-y-1 justify-start items-center overflow-hidden">
+		<div className="w-full h-[30vh] md:size-full flex flex-col space-y-1 justify-start items-center overflow-hidden">
 			<div className="flex flex-col items-center space-y-1 px-4 pt-4">
 				<p className='flex items-center text-[#999999] text-sm'>
 					<span className='mr-2 font-medium'>

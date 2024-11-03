@@ -87,7 +87,7 @@ const FourthBlock = () => {
 
 	return (
 		<div className="size-full flex flex-col space-y-4">
-			<div className="w-full h-full flex gap-4 overflow-hidden">
+			<div className="w-full h-full flex md:flex-row flex-col gap-4 overflow-hidden">
 				<motion.div
 					key={currentIndex}
 					initial={{ opacity: 0 }}
@@ -143,7 +143,7 @@ const FourthBlock = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-full h-[66px] flex gap-4">
+			<div className="w-full md:h-[66px] flex md:flex-row flex-col gap-4">
 				{socialLinks.map(({ url, label, icon, iconBgClass }) => (
 					<Link
 						key={url}
