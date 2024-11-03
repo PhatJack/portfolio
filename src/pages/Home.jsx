@@ -59,7 +59,7 @@ const Home = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.5, ease: "easeInOut", delay: 1.5 }}
-				className="bg-[#161616] border border-[#252525] rounded-3xl md:row-start-7 lg:row-start-9 2xl:row-start-7 md:row-span-2 lg:col-start-5 2xl:col-start-3 md:col-span-3 lg:col-span-2 2xl:col-span-1 p-4">
+				className="md:block hidden bg-[#161616] border border-[#252525] rounded-3xl md:row-start-7 lg:row-start-9 2xl:row-start-7 md:row-span-2 lg:col-start-5 2xl:col-start-3 md:col-span-3 lg:col-span-2 2xl:col-span-1 p-4">
 				<FifthBlock />
 			</motion.div>
 
@@ -77,7 +77,7 @@ const Home = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.5, ease: "easeInOut", delay: 2 }}
-				className="bg-[#161616] border border-[#252525] rounded-3xl md:row-start-11 2xl:row-start-5 md:row-span-2 lg:row-span-1 2xl:row-span-2 md:col-span-3 lg:col-span-2 2xl:col-span-1 lg:col-start-7 px-2 py-4">
+				className="md:block hidden bg-[#161616] border border-[#252525] rounded-3xl md:row-start-11 2xl:row-start-5 md:row-span-2 lg:row-span-1 2xl:row-span-2 md:col-span-3 lg:col-span-2 2xl:col-span-1 lg:col-start-7 px-2 py-4">
 				<SeventhBlock />
 			</motion.div>
 
@@ -104,7 +104,7 @@ const Home = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.5, ease: "easeInOut", delay: 2.75 }}
-				className="bg-[#161616] border border-[#252525] rounded-3xl md:row-start-13 lg:row-start-11 2xl:row-start-1 lg:col-start-1 2xl:col-start-9 md:row-span-2 lg:row-span-1 2xl:row-span-2 col-span-3 lg:col-span-2 2xl:col-span-1 p-4" >
+				className="md:block hidden bg-[#161616] border border-[#252525] rounded-3xl md:row-start-13 lg:row-start-11 2xl:row-start-1 lg:col-start-1 2xl:col-start-9 md:row-span-2 lg:row-span-1 2xl:row-span-2 col-span-3 lg:col-span-2 2xl:col-span-1 p-4" >
 				<TenthBlock />
 			</motion.div >
 
@@ -113,10 +113,12 @@ const Home = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.5, ease: "easeInOut", delay: 3 }}
-				className="bg-[#161616] border border-[#252525] rounded-3xl md:row-start-15 lg:row-start-11 2xl:row-start-3 lg:row-span-1 md:col-start-5 lg:col-start-3 2xl:col-start-9 md:row-span-2 2xl:row-span-2 col-span-2 2xl:col-span-1 px-2 py-4" >
+				className="md:block hidden bg-[#161616] border border-[#252525] rounded-3xl md:row-start-15 lg:row-start-11 2xl:row-start-3 lg:row-span-1 md:col-start-5 lg:col-start-3 2xl:col-start-9 md:row-span-2 2xl:row-span-2 col-span-2 2xl:col-span-1 px-2 py-4" >
 				<EleventhBlock />
 			</motion.div >
 
+
+			{/* Dark Mode */}
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
@@ -124,6 +126,42 @@ const Home = () => {
 				className="hidden lg:block bg-[#161616] border border-[#252525] rounded-3xl row-start-17 lg:row-start-11 2xl:row-start-9 row-span-1 md:col-span-2 2xl:col-span-1 lg:col-start-5 2xl:col-start-3 p-4">
 				<TwelveBlock />
 			</motion.div>
+
+
+			<div className="md:hidden flex gap-4">
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.5, ease: "easeInOut", delay: 2 }}
+					className="w-full bg-[#161616] border border-[#252525] rounded-3xl px-2 py-4">
+					<SeventhBlock />
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.5, ease: "easeInOut", delay: 3 }}
+					className="w-full bg-[#161616] border border-[#252525] rounded-3xl px-2 py-4" >
+					<EleventhBlock />
+				</motion.div >
+			</div>
+
+
+			<div className="md:hidden flex gap-4">
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.5, ease: "easeInOut", delay: 1.5 }}
+					className="w-full bg-[#161616] border border-[#252525] rounded-3xl p-4">
+					<FifthBlock />
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.5, ease: "easeInOut", delay: 2.75 }}
+					className="w-full bg-[#161616] border border-[#252525] rounded-3xl p-4" >
+					<TenthBlock />
+				</motion.div >
+			</div>
 		</div >
 	)
 }
