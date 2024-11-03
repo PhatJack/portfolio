@@ -16,6 +16,7 @@ import { useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import AvatarDisplay from '@/common/four/AvatarDisplay'
 const socialLinks = [
 	{
 		url: "https://www.facebook.com/jack.willam2003",
@@ -61,9 +62,7 @@ const infoTags = [
 ]
 
 const FourthBlock = () => {
-
 	const avatars = [Avatar, AvatarOne, AvatarTwo, AvatarThree, AvatarFour, AvatarFive, AvatarSix, AvatarSeven, AvatarEight, AvatarNine]
-	const [currentIndex, setCurrentIndex] = useState(0);
 
 	const handleDownload = useCallback(() => {
 		const pdfUrl = "/src/CV_NguyenTienPhat_Front-endDeveloper.pdf"
@@ -75,36 +74,11 @@ const FourthBlock = () => {
 		document.body.removeChild(link)
 	}, [])
 
-	useEffect(() => {
-		const timer = setInterval(() => {
-			setCurrentIndex((prevIndex) =>
-				prevIndex === avatars.length - 1 ? 0 : prevIndex + 1
-			);
-		}, 4000);
-
-		return () => clearInterval(timer);
-	}, []);
 
 	return (
 		<div className="size-full flex flex-col space-y-4">
 			<div className="w-full h-full flex md:flex-row flex-col gap-4 overflow-hidden">
-				<motion.div
-					key={currentIndex}
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{
-						duration: 0.35,
-						ease: "easeInOut"
-					}}
-					className="w-full h-full aspect-[3/4] rounded-2xl border bg-custom-gradient animate-border border-transparent overflow-hidden"
-				>
-					<img
-						src={avatars[currentIndex]}
-						alt={`Avatar ${currentIndex + 1}`}
-						className="w-full h-full object-cover object-bottom"
-					/>
-				</motion.div>
+				<AvatarDisplay avatars={avatars} />
 				<div className="w-full flex flex-col justify-start space-y-2 overflow-hidden">
 					<div className="w-full flex justify-between items-center">
 						<div className='w-fit h-10 relative size-8 bg-[#1f1f1f] flex items-center rounded-full'>

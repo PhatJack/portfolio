@@ -7,8 +7,10 @@ import ImgProject5 from '../../assets/img/flower-delivery.png'
 import ImgProject6 from '../../assets/img/weather-app.png'
 import { motion } from 'framer-motion'
 import { BriefcaseBusiness } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 const SecondBlock = () => {
 
+	const navigate = useNavigate()
 	const images = [ImgProject1, ImgProject2, ImgProject3, ImgProject4, ImgProject5, ImgProject6];
 
 	return (
@@ -59,7 +61,9 @@ const SecondBlock = () => {
 					))}
 				</motion.div>
 			</div>
-			<button className='hover:bg-blue-400 transition-all bg-blue-500 px-8 py-2 rounded-2xl font-medium border-4 border-stone-800 size-fit absolute -bottom-2 2xl:-bottom-1'>
+			<button type='button' onClick={() => {
+				navigate('/project')
+			}} className='hover:bg-blue-400 transition-all bg-blue-500 px-8 py-2 rounded-2xl font-medium border-4 border-stone-800 size-fit absolute -bottom-2 2xl:-bottom-1'>
 				View Works
 			</button>
 		</div>
