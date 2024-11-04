@@ -135,7 +135,7 @@ const Home = () => {
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
 				transition={{ duration: 0.5, ease: "easeInOut", delay: 3.25 }}
-				className="hidden lg:block bg-[#161616] border border-[#252525] rounded-3xl row-start-17 lg:row-start-11 2xl:row-start-9 row-span-1 md:col-span-2 2xl:col-span-1 lg:col-start-5 2xl:col-start-3 p-4">
+				className="hidden lg:block bg-[#161616] border border-[#252525] rounded-3xl row-start-17 lg:row-start-11 2xl:row-start-9 row-span-1 md:col-span-2 2xl:col-span-1 lg:col-start-5 2xl:col-start-3 overflow-hidden">
 				<TwelveBlock />
 			</motion.div>
 

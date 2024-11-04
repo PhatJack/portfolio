@@ -78,6 +78,9 @@ export default {
 				'18' : '18',
 				'19' : '19',
 				'20' : '20'
+			},
+			backgroundImage: {
+				"hero-pattern": "url('/src/assets/background.svg')",
 			}
 		}
 	},
