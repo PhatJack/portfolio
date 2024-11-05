@@ -11,7 +11,7 @@ const FirstBlock = () => {
 				</span>
 				My Stacks</p>
 			<p className='text-xl font-semibold text-[#e6e6e6]'>Tech Arsenal</p>
-			<div className="size-full grid grid-cols-2 gap-4 pb-4">
+			<div className="size-full grid grid-cols-1 min-[400px]:grid-cols-2 gap-4 pb-4">
 				<button className='w-full bg-[rgb(25,25,25)] text-[#CCCCCC] rounded-2xl flex gap-2 justify-start items-center p-3 group relative border border-[rgb(33,33,33)]'>
 					<span className='size-10 flex justify-center items-center bg-[#282828] rounded-lg stroke-[#cccccc] fill-[#cccccc]'>
 						<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className='size-6'><title>Framer</title><path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z" /></svg>

@@ -7,6 +7,13 @@ import SmallAvatar from '@/assets/smallavatar.jpg'
 import { useNavigate } from 'react-router-dom'
 import { MoveRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { BriefcaseBusiness } from 'lucide-react'
+import { CalendarArrowUp } from 'lucide-react'
+import { Ribbon } from 'lucide-react'
+import { Rabbit } from 'lucide-react'
+import { ShieldCheck } from 'lucide-react'
+import { AlarmClock } from 'lucide-react'
+import { HandCoins } from 'lucide-react'
 const Project = () => {
 
 	const navigate = useNavigate()
@@ -46,8 +53,28 @@ const Project = () => {
 			url: "https://leetcode.com/u/PhatJack/",
 			label: "Leetcode me",
 			icon: (
-				<svg role="img" viewBox="0 0 24 24" fill='#FFA116' xmlns="http://www.w3.org/2000/svg" className='size-7'><title>LeetCode</title><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+				<svg role="img" viewBox="0 0 24 24" fill='#FFA116' xmlns="http://www.w3.org/2000/svg" className='size-7'><title>LeetCode</title><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" /></svg>
 			)
+		}
+	]
+
+
+	const benefits = [
+		{
+			icon: <Rabbit className='text-[#ccc]' />,
+			title: "Speed Delivery",
+		},
+		{
+			icon: <ShieldCheck className='text-[#ccc]' />,
+			title: "Quality Code",
+		},
+		{
+			icon: <AlarmClock className='text-[#ccc]' />,
+			title: "24/7 Support"
+		},
+		{
+			icon: <HandCoins className='text-[#ccc]' />,
+			title: "Free Consultation"
 		}
 	]
 
@@ -90,7 +117,7 @@ const Project = () => {
 							<p className='font-bold text-xl'>Nguyen Tien Phat</p>
 						</div>
 						<div className="w-full flex flex-col gap-2 lg:mt-0 mt-6">
-							{socialLinks.map(({ url, label, icon, iconBgClass },index) => (
+							{socialLinks.map(({ url, label, icon, iconBgClass }, index) => (
 								<Link
 									key={url}
 									to={url}
@@ -119,15 +146,55 @@ const Project = () => {
 			</div>
 			<div className="lg:w-3/5 w-full rounded-3xl h-full flex flex-col gap-4">
 				<MiddleBlock />
-				<div className="size-full rounded-3xl border bg-[#101010] border-[#252525]"></div>
+				<div className="size-full rounded-3xl border bg-[#101010] border-[#252525] p-4 flex justify-center items-center text-[#ccc] font-semibold">
+					Can someone help me to design this section? :)))))
+				</div>
 			</div>
 			<div className="lg:w-1/5 w-full h-full flex flex-col space-y-4">
-				<div className="rounded-3xl border bg-[#101010] border-[#252525] w-full h-full">
-
+				<div className="rounded-3xl border bg-[#101010] border-[#252525] w-full flex flex-col gap-2 justify-center items-center p-4">
+					<div className='w-fit h-10 relative size-8 bg-[#1f1f1f] flex items-center rounded-full'>
+						<span className='absolute left-4 size-3 bg-green-500 rounded-full animate-pulse-custom' />
+						<p className='ml-10 mr-4 font-semibold text-[#999] whitespace-nowrap'>Available to work</p>
+					</div>
+					<div className="w-full rounded-full bg-[#141414] flex gap-2 justify-center items-center py-2.5 text-lg text-[#999] font-medium">
+						<BriefcaseBusiness stroke='#999' />
+						Freelancing
+					</div>
+					<Link
+						to={"https://forms.gle/wnwHa79wRbHwSi5"}
+						target={'_blank'}
+						className="flex justify-center items-center py-3 w-full space-x-2 rounded-xl
+                hover:animate-border bg-custom-gradient-button border border-[#1f1f1f] hover:border-transparent transition-all">
+						<CalendarArrowUp className="text-blue-500" />
+						<span className="text-lg font-semibold text-zinc-400">Schedule me</span>
+					</Link>
 				</div>
 				<div className="w-full rounded-3xl border bg-[#101010] border-[#252525]">
 					<RightBlock />
-
+				</div>
+				<div className="rounded-3xl border bg-[#101010] border-[#252525] w-full h-full flex flex-col gap-4 justify-center items-center">
+					<div className="flex flex-col items-center space-y-1 px-4 pt-4">
+						<p className='flex items-center text-[#999999] text-sm'>
+							<span className='mr-2 font-medium'>
+								<Ribbon className='text-blue-500' />
+							</span>
+							Benefits</p>
+						<p className='text-xl font-semibold text-[#e6e6e6]'>Service Benefits</p>
+					</div>
+					<div className="w-full h-px bg-[#252525] relative">
+					</div>
+					<div className="w-full h-full flex flex-col gap-2 px-4 pb-4">
+						{
+							benefits.map((item, index) => (
+								<div key={index} className="w-full flex items-center space-x-2 bg-[#191919] p-2 rounded-xl">
+									<div className="flex items-center justify-center size-10 p-1 rounded-lg bg-[#252525]">
+										{item.icon}
+									</div>
+									<p className="text-sm whitespace-nowrap text-[#ccc] font-medium">{item.title}</p>
+								</div>
+							))
+						}
+					</div>
 				</div>
 			</div>
 

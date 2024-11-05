@@ -15,7 +15,7 @@ import { motion } from 'framer-motion'
 
 const Home = () => {
 	return (
-		<motion.div className="w-full 2xl:h-full flex flex-col md:grid md:grid-cols-6 grid-rows-20 md:grid-rows-16 lg:grid-cols-9 lg:grid-rows-10 2xl:grid-rows-9 gap-4 md:gap-6">
+		<motion.div className="w-full 2xl:h-full flex flex-col md:grid md:grid-cols-6 grid-rows-20 md:grid-rows-16 lg:grid-cols-9 lg:grid-rows-10 2xl:grid-rows-9 gap-4">
 			{/* My Stack */}
 			<motion.div
 				initial={{ opacity: 0 }}
