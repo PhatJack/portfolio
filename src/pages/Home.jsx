@@ -18,16 +18,11 @@ const Home = () => {
 
 	const isPresent = useIsPresent()
 
+	console.log("Home display: " + isPresent)
+
 	return (
 		<div className="w-full 2xl:h-full flex flex-col md:grid md:grid-cols-6 grid-rows-20 md:grid-rows-16 lg:grid-cols-9 lg:grid-rows-10 2xl:grid-rows-9 gap-4">
-			{/* Transition Background */}
-			<motion.div
-				initial={{ scaleX: 1 }}
-				animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
-				exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
-				style={{ originX: isPresent ? 0 : 1 }}
-				className="fixed inset-0 bg-blue-500 z-50"></motion.div>
-			
+
 			{/* My Stack */}
 			<motion.div
 				initial={{ opacity: 0 }}
@@ -174,6 +169,14 @@ const Home = () => {
 					<TenthBlock />
 				</motion.div >
 			</div>
+
+			{/* Transition Background */}
+			<motion.div
+				initial={{ scaleX: 1 }}
+				animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+				exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+				style={{ originX: isPresent ? 0 : 1 }}
+				className="fixed inset-0 bg-blue-500 z-50"></motion.div>
 
 		</div >
 	)

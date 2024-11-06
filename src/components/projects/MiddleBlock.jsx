@@ -60,7 +60,7 @@ const onOpenProject = (link) => {
 					projectsList.map((project, index) => (
 						<div key={index} onClick={() => onOpenProject(project.githubLink)} className="w-full bg-[#191919] hover:bg-[#252525] rounded-2xl p-4 group cursor-pointer transition-all">
 							<div className="w-full lg:h-32 rounded-2xl overflow-hidden">
-								<img src={project.img} alt="" className='size-full object-cover' />
+								<img src={project.img} alt="" loading='lazy' className='size-full object-cover' />
 							</div>
 							<div className="w-full flex justify-between items-center mt-2">
 								<div className="flex flex-col">
