@@ -43,6 +43,10 @@ const MiddleBlock = () => {
 	},
 ];
 
+const onOpenProject = (link) => {
+	window.open(link, '_blank')
+}
+
 	return (
 		<div className='flex flex-col space-y-2 justify-center items-center size-full h-fit p-4 border bg-[#101010] border-[#252525] rounded-3xl'>
 			<p className='flex text-sm items-center text-[#999999]'>
@@ -54,7 +58,7 @@ const MiddleBlock = () => {
 			<div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
 				{
 					projectsList.map((project, index) => (
-						<div key={index} className="w-full bg-[#191919] hover:bg-[#252525] rounded-2xl p-4 group cursor-pointer transition-all">
+						<div key={index} onClick={() => onOpenProject(project.githubLink)} className="w-full bg-[#191919] hover:bg-[#252525] rounded-2xl p-4 group cursor-pointer transition-all">
 							<div className="w-full lg:h-32 rounded-2xl overflow-hidden">
 								<img src={project.img} alt="" className='size-full object-cover' />
 							</div>
