@@ -24,7 +24,7 @@ const MiddleBlock = () => {
 		img: ImgProject3,
 		title: 'Portfolio',
 		category: 'Web Development',
-		githubLink: ""
+		githubLink: "https://github.com/PhatJack/portofolio-v4"
 	}, {
 		img: ImgProject4,
 		title: 'Tu Tien Game',

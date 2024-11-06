@@ -14,7 +14,16 @@ import { Rabbit } from 'lucide-react'
 import { ShieldCheck } from 'lucide-react'
 import { AlarmClock } from 'lucide-react'
 import { HandCoins } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { useIsPresent } from 'framer-motion'
+import { useEffect } from 'react'
 const Project = () => {
+
+	const isPresent = useIsPresent()
+
+	useEffect(() => {
+		console.log('Project isPresent:', isPresent)
+	}, [isPresent])
 
 	const navigate = useNavigate()
 	const socialLinks = [
@@ -58,7 +67,6 @@ const Project = () => {
 		}
 	]
 
-
 	const benefits = [
 		{
 			icon: <Rabbit className='text-[#ccc]' />,
@@ -81,7 +89,26 @@ const Project = () => {
 
 	return (
 		<div className="w-full h-full flex lg:flex-row flex-col gap-4">
-			<div className="lg:w-1/5 w-full h-full rounded-3xl flex flex-col gap-4">
+			{/* Transition Background */}
+			<motion.div
+				initial={{ scaleX: 1 }}
+				animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+				exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+				style={{ originX: isPresent ? 0 : 1 }}
+				className="fixed inset-0 bg-blue-500 z-50"></motion.div>
+
+			<motion.div
+				initial={{
+					opacity: 0
+				}}
+				animate={{
+					opacity: 1
+				}}
+				transition={{
+					duration: 0.5,
+					delay: 0.5
+				}}
+				className="lg:w-1/5 w-full h-full rounded-3xl flex flex-col gap-4">
 				<div className="w-full flex lg:flex-col sm:flex-row flex-col gap-4">
 					<div className="w-full h-fit p-4 border bg-[#101010] border-[#252525] rounded-3xl">
 						<div className="size-full flex flex-col justify-center items-center bg-transparent relative">
@@ -143,14 +170,36 @@ const Project = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="lg:w-3/5 w-full rounded-3xl h-full flex flex-col gap-4">
+			</motion.div>
+			<motion.div
+				initial={{
+					opacity: 0
+				}}
+				animate={{
+					opacity: 1
+				}}
+				transition={{
+					duration: 0.5,
+					delay: 0.75
+				}}
+				className="lg:w-3/5 w-full rounded-3xl h-full flex flex-col gap-4">
 				<MiddleBlock />
 				<div className="size-full rounded-3xl border bg-[#101010] border-[#252525] p-4 flex justify-center items-center text-[#ccc] font-semibold">
-					Can someone help me to design this section? :)))))
+					Can someone help me to design this section? {':)))))'}
 				</div>
-			</div>
-			<div className="lg:w-1/5 w-full h-full flex flex-col space-y-4">
+			</motion.div>
+			<motion.div
+				initial={{
+					opacity: 0
+				}}
+				animate={{
+					opacity: 1
+				}}
+				transition={{
+					duration: 0.5,
+					delay: 1
+				}}
+				className="lg:w-1/5 w-full h-full flex flex-col space-y-4">
 				<div className="rounded-3xl border bg-[#101010] border-[#252525] w-full flex flex-col gap-2 justify-center items-center p-4">
 					<div className='w-fit h-10 relative size-8 bg-[#1f1f1f] flex items-center rounded-full'>
 						<span className='absolute left-4 size-3 bg-green-500 rounded-full animate-pulse-custom' />
@@ -196,7 +245,9 @@ const Project = () => {
 						}
 					</div>
 				</div>
-			</div>
+			</motion.div>
+
+
 
 		</div>
 	)
