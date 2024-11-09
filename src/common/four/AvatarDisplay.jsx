@@ -1,4 +1,3 @@
-// AvatarDisplay.jsx
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -25,19 +24,59 @@ const getMasks = () => {
 	};
 };
 
+const preloadImage = (src) => {
+	return new Promise((resolve, reject) => {
+		const img = new Image();
+		img.onload = resolve;
+		img.onerror = reject;
+		img.src = src;
+	});
+};
+
 const AvatarDisplay = ({ avatars }) => {
 	const masks = getMasks();
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [currentMask, setCurrentMask] = useState('lines');
+	const [isLoading, setIsLoading] = useState(false);
+
+	// Preload the next image
+	const preloadNextImage = async () => {
+		const nextIndex = currentIndex === avatars.length - 1 ? 0 : currentIndex + 1;
+		try {
+			setIsLoading(true);
+			await preloadImage(avatars[nextIndex]);
+			setIsLoading(false);
+		} catch (error) {
+			console.error('Error preloading image:', error);
+			setIsLoading(false);
+		}
+	};
 
 	useEffect(() => {
-		const timer = setInterval(() => {
-			setCurrentIndex((prevIndex) => (prevIndex === avatars.length - 1 ? 0 : prevIndex + 1));
-			setCurrentMask(Math.random() < 0.5 ? 'lines' : 'squares');
-		}, 4000);
+		let timer;
+
+		const transitionToNext = async () => {
+			if (!isLoading) {
+				// Start preloading the next image
+				await preloadNextImage();
+
+				// Only transition if component is still mounted
+				setCurrentIndex((prevIndex) =>
+					prevIndex === avatars.length - 1 ? 0 : prevIndex + 1
+				);
+				setCurrentMask(Math.random() < 0.5 ? 'lines' : 'squares');
+			}
+		};
+
+		timer = setInterval(transitionToNext, 4000);
 
 		return () => clearInterval(timer);
-	}, [avatars.length]);
+	}, [avatars.length, isLoading]);
+
+	// Preload the first image on mount
+	useEffect(() => {
+		preloadNextImage();
+	}, []);
 
 	const currentMaskSet = masks[currentMask];
 
@@ -52,8 +91,10 @@ const AvatarDisplay = ({ avatars }) => {
 		>
 			<img
 				src={avatars[currentIndex]}
+				loading="eager"
 				alt={`Avatar ${currentIndex + 1}`}
-				className="w-full h-full object-cover object-bottom"
+				className="w-full h-full object-cover object-bottom opacity-0 transition-opacity duration-300"
+				onLoad={(e) => e.target.style.opacity = 1}
 			/>
 		</motion.div>
 	);

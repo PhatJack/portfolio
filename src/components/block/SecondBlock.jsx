@@ -1,10 +1,10 @@
 import React from 'react'
-import ImgProject1 from '../../assets/img/flower-delivery.png'
-import ImgProject2 from '../../assets/img/pomodoro.png'
-import ImgProject3 from '../../assets/img/portfolio.png'
-import ImgProject4 from '../../assets/img/tutien-game.png'
-import ImgProject5 from '../../assets/img/flower-delivery.png'
-import ImgProject6 from '../../assets/img/weather-app.png'
+import ImgProject1 from '../../assets/img/flower-delivery.webp'
+import ImgProject2 from '../../assets/img/pomodoro.webp'
+import ImgProject3 from '../../assets/img/portfolio.webp'
+import ImgProject4 from '../../assets/img/tutien-game.webp'
+import ImgProject5 from '../../assets/img/flower-delivery.webp'
+import ImgProject6 from '../../assets/img/weather-app.webp'
 import { motion } from 'framer-motion'
 import { BriefcaseBusiness } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
@@ -36,8 +36,9 @@ const SecondBlock = () => {
 						<img
 							src={item}
 							key={index}
+							loading='lazy'
 							alt="Project image"
-							className="h-36 object-cover rounded-lg border-2 border-stone-800"
+							className="h-36 object-cover rounded-lg border-2 border-stone-800 relative overflow-hidden before:absolute before:content-['image'] before:size-full before:bg-gray-500"
 						/>
 					))}
 				</motion.div>
@@ -56,7 +57,8 @@ const SecondBlock = () => {
 							src={item}
 							key={index}
 							alt="Project image"
-							className="h-36 object-cover rounded-lg border-2 border-stone-800"
+							loading='lazy'
+							className="h-36 object-cover rounded-lg border-2 border-stone-800 relative overflow-hidden before:absolute before:content-['image'] before:size-full before:bg-gray-500"
 						/>
 					))}
 				</motion.div>
