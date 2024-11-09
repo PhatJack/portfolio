@@ -11,7 +11,7 @@ const SixthBlock = () => {
 			Contributions</p>
 			<p className='text-xl font-semibold text-[#e6e6e6]'>Github's contribution 2024</p>
 			<div className="size-full flex justify-center items-center">
-				<iframe width="780px" className='h-48 md:h-[161px]' src="https://git-graph.vercel.app/embed/PhatJack?showColorLegend=true&showWeekdayLabels=false&showMonthLabels=true&showTotalCount=true&blockMargin=2&blockRadius=2&blockSize=12&fontSize=14&weekStart=6&year=2024"></iframe>
+				<iframe width="780px" className='h-48 md:h-[161px]' title='github contribution ' src="https://git-graph.vercel.app/embed/PhatJack?showColorLegend=true&showWeekdayLabels=false&showMonthLabels=true&showTotalCount=true&blockMargin=2&blockRadius=2&blockSize=12&fontSize=14&weekStart=6&year=2024"></iframe>
 			</div>
 		</div>
 	)

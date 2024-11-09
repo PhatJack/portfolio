@@ -21,7 +21,7 @@ function App() {
 
 	return (
 		<div className="2xl:w-screen 2xl:h-screen 2xl:max-h-screen bg-[#060606] p-4 md:p-8 xl:p-10">
-			<AnimatePresence mode="wait" initial={false}>
+			<AnimatePresence mode="wait">
 				{cloneElement(elements, { key: location.pathname })}
 			</AnimatePresence>
 		</div >

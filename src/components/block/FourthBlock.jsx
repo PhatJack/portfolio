@@ -90,6 +90,9 @@ const FourthBlock = () => {
 							<button
 								type='button'
 								onClick={handleDownload}
+								aria-describedby='Download CV'
+								aria-label='download'
+								role='button'
 								className="size-10 flex justify-center items-center bg-[#282828] rounded-lg hover:rounded-full transition-[border-radius]"
 							>
 								<Download size={22} />

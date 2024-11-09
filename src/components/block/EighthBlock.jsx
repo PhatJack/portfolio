@@ -47,7 +47,7 @@ const EighthBlock = () => {
 			{/* Text Content */}
 			<div className="text-center space-y-1">
 				<h2 className="text-2xl font-semibold text-[#999]">Let's work together</h2>
-				<p className="text-lg font-semibold text-muted-foreground">Let's Make Magic Happen Together!</p>
+				<p className="text-lg font-semibold text-[#797979]">Let's Make Magic Happen Together!</p>
 			</div>
 
 			{/* Contact Links */}
